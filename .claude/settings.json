@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(sleep 3 && cat /tmp/vite-dev.log)",
+      "Read(//private/tmp/**)",
+      "Bash(node -e ' *)",
+      "Read(//tmp/**)"
     ]
   }
 }

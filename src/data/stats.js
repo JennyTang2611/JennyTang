@@ -1,6 +1,6 @@
 // Stats hiển thị ngay dưới tagline trong Hero
 export const heroStats = [
-  { num: '$3–4M', label: 'Monthly ad spend' },
+  { num: '$3 - 4M', label: 'Monthly ad spend' },
   { num: '$10M', label: 'Q1 2026 revenue' },
   { num: '30+', label: 'Publishers managed' }
 ]
@@ -8,7 +8,7 @@ export const heroStats = [
 // Impact Highlights section - grid 3x2
 export const impactHighlights = [
   {
-    big: '$3–4M',
+    big: '$3 - 4M',
     desc: 'Monthly ad spend supported across Personal Finance campaigns at Gen Digital.'
   },
   {
