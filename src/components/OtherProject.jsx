@@ -24,7 +24,7 @@ export default function OtherProject({ project }) {
       <div className="sub">{project.subtitle}</div>
       <p>{project.description}</p>
       <div className="impact-line">{project.impact}</div>
-      <Link to={project.link} className="link-arrow">View Project →</Link>
+      <Link to={project.link} className="btn-outline">View Project</Link>
     </article>
   )
 }

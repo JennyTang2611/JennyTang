@@ -979,7 +979,8 @@ a.featured-img {
   display: inline-block;
   min-width: 70px;
 }
-.featured-content .btn-outline { align-self: flex-start; }
+.featured-content .btn-outline,
+.other-project .btn-outline { align-self: flex-start; }
 
 /* Other projects grid */
 .other-projects-label {
@@ -1355,10 +1356,11 @@ footer {
   .other-project .thumb { aspect-ratio: 4 / 3; margin-bottom: 18px; }
   .other-project h4 { font-size: 20px; }
   .other-project p { font-size: 15px; }
-  .other-project .link-arrow {
+  .other-project .btn-outline {
     width: 100%;
     text-align: center;
-    padding: 12px 0;
+    padding: 14px 20px;
+    letter-spacing: 0.2em;
   }
 
   /* -- Footer -- */

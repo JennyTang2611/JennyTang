@@ -8,7 +8,6 @@ export default function Footer() {
     <footer id="contact">
       <div className="footer-cta">
         <div className="eyebrow">Let's Talk</div>
-        <h2>Have a data problem worth solving?</h2>
         {contact.linkedin && (
           <a href={contact.linkedin} className="btn-outline">
             Connect on LinkedIn
@@ -28,9 +27,6 @@ export default function Footer() {
           <h3>Contact</h3>
           <ul>
             {contact.linkedin && <li><a href={contact.linkedin}>LinkedIn</a></li>}
-            {contact.phone && (
-              <li><a href={`tel:${contact.phone.replace(/[^+\d]/g, '')}`}>{contact.phone}</a></li>
-            )}
             {contact.resume && <li><a href={contact.resume}>Resume</a></li>}
             {contact.github && <li><a href={contact.github}>GitHub</a></li>}
           </ul>
