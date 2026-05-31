@@ -1,0 +1,154 @@
+
+<style>
+@keyframes countUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float1{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(80px,-40px) scale(1.1)}50%{transform:translate(160px,20px) scale(.95)}75%{transform:translate(60px,50px) scale(1.05)}}
+@keyframes float2{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(-60px,50px) scale(1.08)}50%{transform:translate(-120px,-30px) scale(.92)}75%{transform:translate(-40px,-60px) scale(1.04)}}
+@keyframes float3{0%,100%{transform:translate(0,0)}33%{transform:translate(100px,-60px)}66%{transform:translate(-50px,40px)}}
+@keyframes float4{0%,100%{transform:translate(0,0)}33%{transform:translate(-80px,30px)}66%{transform:translate(60px,-50px)}}
+@keyframes drift{0%{transform:translateX(-100%)}100%{transform:translateX(800px)}}
+@keyframes pulse{0%,100%{opacity:.15}50%{opacity:.35}}
+@keyframes glow{0%,100%{opacity:.6}50%{opacity:1}}
+@keyframes scanline{0%{top:-2px}100%{top:100%}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes slideR{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes barGrow{from{width:0}}
+.wrap{position:relative;background:#0f1523;border-radius:16px;overflow:hidden;padding:48px 44px 40px;font-family:system-ui,-apple-system,sans-serif}
+.bg{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.12}
+.o1{width:350px;height:350px;background:#5be7a9;top:-80px;left:-60px;animation:float1 18s ease-in-out infinite}
+.o2{width:300px;height:300px;background:#c78dfa;bottom:-100px;right:-40px;animation:float2 22s ease-in-out infinite}
+.o3{width:200px;height:200px;background:#3a7bd5;top:40%;left:50%;animation:float3 15s ease-in-out infinite;opacity:.08}
+.o4{width:250px;height:250px;background:#f0a45d;top:10%;right:20%;animation:float4 20s ease-in-out infinite;opacity:.06}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(91,231,169,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(91,231,169,.03) 1px,transparent 1px);background-size:60px 60px}
+.scan{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(91,231,169,.08),transparent);animation:scanline 8s linear infinite;opacity:.5}
+.particles{position:absolute;inset:0}
+.dot{position:absolute;width:2px;height:2px;border-radius:50%;background:#5be7a9;opacity:.2;animation:pulse 3s ease-in-out infinite}
+.line-h{position:absolute;height:1px;background:linear-gradient(90deg,transparent,rgba(91,231,169,.06),transparent);animation:drift 12s linear infinite}
+.content{position:relative;z-index:1}
+.tag{display:inline-flex;align-items:center;gap:7px;font-size:10px;letter-spacing:.14em;font-weight:600;color:#5be7a9;margin-bottom:16px;animation:slideR .5s ease-out}
+.tag-dot{width:7px;height:7px;border-radius:50%;background:#5be7a9;animation:glow 2s infinite}
+.title{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:400;color:#f0f4f8;line-height:1.25;margin-bottom:8px;animation:countUp .6s ease-out}
+.desc{font-size:13px;color:#5a6a82;line-height:1.65;margin-bottom:36px;animation:countUp .7s ease-out;max-width:520px}
+.numbers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-bottom:36px}
+.num-card{animation:countUp .8s ease-out backwards;text-align:center;padding:24px 12px;border-radius:12px;background:rgba(26,32,53,.7);border:1px solid rgba(42,51,80,.6);backdrop-filter:blur(4px);transition:all .4s}
+.num-card:nth-child(1){animation-delay:.2s}
+.num-card:nth-child(2){animation-delay:.4s}
+.num-card:nth-child(3){animation-delay:.6s}
+.num-card:nth-child(4){animation-delay:.8s}
+.num-card:hover{border-color:rgba(91,231,169,.3);background:rgba(26,32,53,.9);transform:translateY(-4px)}
+.num-val{font-family:Georgia,'Times New Roman',serif;font-size:40px;font-weight:400;line-height:1;margin-bottom:6px}
+.num-val.g{color:#5be7a9}
+.num-val.p{color:#c78dfa}
+.num-val.b{color:#3a9bf5}
+.num-val.w{color:#f0a45d}
+.num-label{font-size:10px;letter-spacing:.1em;color:#4a5a70;font-weight:600;margin-bottom:4px}
+.num-sub{font-size:11px;color:#5a6a82;line-height:1.4}
+.bars-section{margin-bottom:32px;animation:countUp .9s ease-out 0.9s backwards}
+.bars-title{font-size:11px;color:#5a6a82;margin-bottom:14px;letter-spacing:.06em}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.bar-label{width:105px;font-size:11px;color:#7e8ea0;text-align:right;flex-shrink:0}
+.bar-track{flex:1;height:8px;background:rgba(30,37,58,.8);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;animation:barGrow 1.5s cubic-bezier(.4,0,.2,1) backwards}
+.bar-pct{font-size:11px;color:#eef2f7;width:40px;font-family:monospace;font-weight:500}
+.bd1{animation-delay:1s}.bd2{animation-delay:1.1s}.bd3{animation-delay:1.2s}.bd4{animation-delay:1.3s}
+.bottom{display:flex;justify-content:space-between;align-items:center;animation:countUp 1s ease-out 1.2s backwards}
+.bottom-left{display:flex;gap:16px;font-size:10px;color:#3d4a60}
+.bottom-left span{display:flex;align-items:center;gap:5px}
+.bottom-left .d{width:6px;height:6px;border-radius:50%}
+.live{display:flex;align-items:center;gap:6px;font-size:11px;color:#5be7a9;font-weight:500}
+.live-d{width:7px;height:7px;border-radius:50%;background:#5be7a9;animation:blink 1.5s infinite}
+</style>
+
+<div class="wrap">
+  <div class="bg">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+    <div class="orb o4"></div>
+    <div class="grid-bg"></div>
+    <div class="scan"></div>
+    <div class="particles" id="pts"></div>
+    <div class="line-h" style="top:25%;width:200px;animation-delay:0s;opacity:.4"></div>
+    <div class="line-h" style="top:55%;width:160px;animation-delay:4s;opacity:.3"></div>
+    <div class="line-h" style="top:78%;width:180px;animation-delay:8s;opacity:.35"></div>
+  </div>
+
+  <div class="content">
+    <div class="tag"><span class="tag-dot"></span>CPA LINEUP INTELLIGENCE AGENT</div>
+    <div class="title">AI-powered lineup optimization</div>
+    <div class="desc">Scaling revenue and cutting waste across 26 publishers, 116 placements, and 6 financial offers -- powered by real-time RPM analysis</div>
+
+    <div class="numbers">
+      <div class="num-card">
+        <div class="num-label">REVENUE SCALING</div>
+        <div class="num-val g" id="n1">0x</div>
+        <div class="num-sub">by shifting to top RPM combos</div>
+      </div>
+      <div class="num-card">
+        <div class="num-label">COST REDUCTION</div>
+        <div class="num-val p" id="n2">0%</div>
+        <div class="num-sub">wasted impressions eliminated</div>
+      </div>
+      <div class="num-card">
+        <div class="num-label">TOP RPM</div>
+        <div class="num-val b" id="n3">$0</div>
+        <div class="num-sub">MyPoints x Synchrony CD</div>
+      </div>
+      <div class="num-card">
+        <div class="num-label">DECISION SPEED</div>
+        <div class="num-val w" id="n4">0%</div>
+        <div class="num-sub">hours to seconds with AI</div>
+      </div>
+    </div>
+
+    <div class="bars-section">
+      <div class="bars-title">IMPRESSION VOLUME vs. REVENUE CONTRIBUTION</div>
+      <div class="bar-row"><span class="bar-label">Top 10 combos</span><div class="bar-track"><div class="bar-fill bd1" style="width:68%;background:#5be7a9"></div></div><span class="bar-pct" style="color:#5be7a9">68% rev</span></div>
+      <div class="bar-row"><span class="bar-label">Mid-tier</span><div class="bar-track"><div class="bar-fill bd2" style="width:27%;background:#3a9bf5"></div></div><span class="bar-pct" style="color:#3a9bf5">27% rev</span></div>
+      <div class="bar-row"><span class="bar-label">Underperformers</span><div class="bar-track"><div class="bar-fill bd3" style="width:5%;background:#c78dfa"></div></div><span class="bar-pct" style="color:#c78dfa">5% rev</span></div>
+      <div class="bar-row"><span class="bar-label">&#8593; Their volume</span><div class="bar-track"><div class="bar-fill bd4" style="width:66%;background:#f0a45d"></div></div><span class="bar-pct" style="color:#f0a45d">66% impr</span></div>
+    </div>
+
+    <div class="bottom">
+      <div class="bottom-left">
+        <span><span class="d" style="background:#5be7a9"></span>Scale winners</span>
+        <span><span class="d" style="background:#c78dfa"></span>Cut waste</span>
+        <span><span class="d" style="background:#3a9bf5"></span>AI-ranked lineup</span>
+        <span><span class="d" style="background:#f0a45d"></span>Real-time filters</span>
+      </div>
+      <div class="live"><span class="live-d"></span>Live</div>
+    </div>
+  </div>
+</div>
+
+<script>
+var pts=document.getElementById('pts');
+for(var i=0;i<30;i++){
+  var d=document.createElement('div');
+  d.className='dot';
+  d.style.left=Math.random()*100+'%';
+  d.style.top=Math.random()*100+'%';
+  d.style.animationDelay=Math.random()*5+'s';
+  d.style.animationDuration=(2+Math.random()*4)+'s';
+  d.style.width=d.style.height=(1+Math.random()*2)+'px';
+  d.style.opacity=(.1+Math.random()*.2).toString();
+  pts.appendChild(d);
+}
+
+function anim(el,end,pre,suf,dur,dec){
+  setTimeout(function(){
+    var s=performance.now();
+    (function u(now){
+      var p=Math.min((now-s)/dur,1);
+      var e=1-Math.pow(1-p,3);
+      var v=dec?parseFloat((end*e).toFixed(dec)):Math.round(end*e);
+      el.textContent=pre+v+suf;
+      if(p<1)requestAnimationFrame(u);
+    })(s);
+  },500);
+}
+anim(document.getElementById('n1'),3,'','x',2000,0);
+anim(document.getElementById('n2'),66,'','%',2200,0);
+anim(document.getElementById('n3'),1261,'$','',2400,0);
+anim(document.getElementById('n4'),95,'','%',2000,0);
+</script>
