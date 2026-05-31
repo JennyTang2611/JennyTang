@@ -55,7 +55,7 @@ export default function MediaOpsRetroProject() {
         <section className="retro-why">
           <h2>The problem</h2>
           <p>
-            Writing a monthly publisher cutover retro manually takes ~2 hours of pulling data across
+            Writing a monthly publisher cutover retro manually takes 1 - 2 days of pulling data across
             spreadsheets, ranking performance, and writing up insights - and the quality varies
             depending on who does it.
           </p>

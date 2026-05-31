@@ -5,9 +5,7 @@ export default function Experience() {
     <section className="experience" id="experience">
       <div className="experience-inner">
         <div className="experience-eyebrow">Work Experience</div>
-        <h2>Where I&apos;ve worked.</h2>
-
-        <ol className="exp-timeline">
+<ol className="exp-timeline">
           {experience.map((entry, i) => (
             <li className="exp-item" key={i}>
               <div className="exp-period">

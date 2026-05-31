@@ -6,8 +6,8 @@ export const experience = [
     start: 'May 2025',
     end: 'Present',
     paragraphs: [
-      'Optimized full-funnel campaign performance across 30+ publishers and 35+ audience segments by analyzing ROAS, CPO, %ATC, %CTR, %C2C, conversion, revenue, and %GPM; refined SOV to profitable publisher placements, testing thresholds, and traffic allocation across CPC and CPA offers - contributing to a 5–10% return and $400K in monthly revenue lift.',
-      "Delivered GBR's record-high revenue of $10M in Q1 2026 while maintaining 58–60% GPM by developing a data-driven budget allocation and pacing strategy across GoBankingRates, CNN, SEM/Google, paid social/Facebook, programmatic platforms, and endemic publishers using historical performance, seasonality trends, and benchmark normalization.",
+      'Optimized full-funnel campaign performance across 30+ publishers and 35+ audience segments by analyzing ROAS, CPO, %ATC, %CTR, %C2C, conversion, revenue, and %GPM; refined SOV to profitable publisher placements, testing thresholds, and traffic allocation across CPC and CPA offers - contributing to a 5 - 10% return and $400K in monthly revenue lift.',
+      "Delivered GBR's record-high revenue of $10M in Q1 2026 while maintaining 58 - 60% GPM by developing a data-driven budget allocation and pacing strategy across GoBankingRates, CNN, SEM/Google, paid social/Facebook, programmatic platforms, and endemic publishers using historical performance, seasonality trends, and benchmark normalization.",
       'Leveraged AI automation tools (Glean, Copilot, and Claude), Excel, and Tableau to automate campaign reporting and performance analysis - improving operational efficiency by 30%, reducing reporting time by 60%, and accelerating optimization against client KPIs and monetization targets.',
       'Supported closing an $800K monthly revenue gap across CPA offers - including SoFi, Truist, Axos, and Bank of America - by resolving ETL-related data delays, coordinating traffic execution, and leading A/B testing on landing pages and APY-driven messaging to improve pacing accuracy and conversion performance.'
     ],
@@ -18,9 +18,9 @@ export const experience = [
           'Capital One · Wells Fargo · Bank of America · E*TRADE · Betterment · Gainbridge · SoFi · Axos · Truist · Robinhood'
       },
       {
-        label: 'Partners / channels',
+        label: 'Partners/Platforms',
         value:
-          'Google · Bing · CNN · Facebook · NAF · Yahoo DSP · DV360 · Xandr · MSN · Dianomi · AOL · select SME publishers'
+          'Facebook / Google / CNN / Programmatic (DV360 · Yahoo DSP · Dianomi · Xandr · NAF) / AOL / Business Insider and SME publishers (Benzinga · USA Today · ..)'
       }
     ]
   },

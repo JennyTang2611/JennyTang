@@ -5,7 +5,7 @@ export default function Education() {
     <section className="education" id="education">
       <div className="education-inner">
         <div className="education-eyebrow">Education</div>
-        <h2>Two graduate programs · two continents.</h2>
+        <h2>Two graduate programs · Two Continents.</h2>
 
         <div className="education-list">
           {education.map((entry, i) => (

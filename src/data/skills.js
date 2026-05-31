@@ -2,31 +2,31 @@ export const skills = [
   {
     icon: 'analytics',
     title: 'Analytics & Reporting',
-    desc: 'Performance analysis · KPI reporting · Trend analysis · Forecasting · Revenue modeling · Sensitivity analysis'
+    desc: 'Skills: Performance Analysis · KPI Reporting · Trend Analysis · Forecasting | Outputs: Revenue Modeling · Sensitivity Analysis · Executive Dashboards'
   },
   {
     icon: 'bi',
     title: 'BI & Data Tools',
-    desc: 'Tableau · Excel (advanced) · Pivot tables · Dashboarding · Data QA · Reporting automation'
+    desc: 'Tools: Tableau · Excel (Advanced) · SQL (Intermediate) | Skills: Dashboarding · Pivot Tables · Data QA · Reporting Automation'
   },
   {
     icon: 'media',
     title: 'Media Platforms',
-    desc: 'DV360 · Yahoo DSP · Dianomi · Xandr · NAF · AOL · Google · Facebook · CNN · Programmatic optimization'
+    desc: 'Social: Facebook · Google | Programmatic: DV360 · Yahoo DSP · Dianomi · Xandr · NAF | Direct: CNN · AOL · Business Insider | Endemic Content: Benzinga · USA Today · etc.'
   },
   {
     icon: 'ai',
     title: 'AI & Workflow Automation',
-    desc: 'Glean AI · Prompt design · Agent workflows · Task prioritization · Slack/Jira/Airtable/Confluence integration'
+    desc: 'Tools: Glean · Claude · Copilot · ChatGPT | Skills: Prompt design · Agent workflows · Task automation | Integrations: Slack · Jira · Airtable · Confluence'
   },
   {
     icon: 'strategy',
-    title: 'Business Strategy',
-    desc: 'Budget allocation · Channel ROI · Yield planning · GPM optimization · Stakeholder management · Executive reporting'
+    title: 'Revenue & Growth Strategy',
+    desc: 'Focus: Budget Allocation · Channel ROI · Yield Planning · GPM Optimization | Delivery: Stakeholder Management · Executive Reporting'
   },
   {
     icon: 'operations',
-    title: 'Media Operations',
-    desc: 'Campaign optimization · Publisher management · Placement scoring · Pacing · Discrepancy checks · Risk monitoring'
+    title: 'GTM & Campaign Execution',
+    desc: 'Execution: Network Optimization · Pacing Strategy · GTM Enablement | Testing: A/B Testing · Pre/Post Testing | Ops: Discrepancy Resolution · Risk Monitoring'
   }
 ]

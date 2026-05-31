@@ -13,14 +13,14 @@ export const impactHighlights = [
   },
   {
     big: '$10M',
-    desc: "GBR's record Q1 2026 revenue, with 58–60% GPM maintained throughout the quarter."
+    desc: "GBR's record Q1 2026 revenue, with 58 - 60% GPM maintained throughout the quarter."
   },
   {
     big: '$400K',
     desc: 'Monthly revenue lift through full-funnel CPC and CPA optimization in October 2025.'
   },
   {
-    big: '30–60%',
+    big: '30 - 60%',
     desc: 'Operational efficiency gains via Excel automation, Tableau reporting, and AI workflows.'
   },
   {
@@ -29,6 +29,6 @@ export const impactHighlights = [
   },
   {
     big: '~15 min',
-    desc: 'Monthly retro prep time, down from 1–2 days, through AI-assisted workflow design.'
+    desc: 'Monthly retro prep time, down from 1 - 2 days, through AI-assisted workflow design.'
   }
 ]

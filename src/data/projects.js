@@ -84,7 +84,7 @@ export const otherProjects = [
     subtitle: 'Auto-generated monthly publisher retro with wins, misses & actions',
     description:
       'An agent that ingests 12-month publisher history and offer-by-publisher data, ranks each publisher against YTD, computes GPM / eCPA / funding / bank-CPM trends, flags sub-$20K publishers, and produces a structured retro with wins, misses, and action plans that follow logically from the data.',
-    impact: 'Replaces ~2 hours of manual monthly retro with a senior-analyst-grade write-up in seconds',
+    impact: 'Replaces 1 - 2 days of manual monthly retro with a senior-analyst-grade write-up in seconds',
     image: '/images/projects/media-ops-retro.jpg',
     banner: '/banners/media-ops-retro.html',
     link: '/projects/media-ops-retro'
